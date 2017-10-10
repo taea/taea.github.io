@@ -13,7 +13,7 @@ before_install:
 - npm install -g hexo
 - npm install
 before_script:
-- git config --global user.name 'taea via Travis CI'
+- git config --global user.name 'taea'
 - git config --global user.email 'igiari@gmail.com'
 - rm -rf public
 - git clone --depth=1 --branch=master https://github.com/taea/taea.github.io.git public
@@ -30,7 +30,7 @@ script:
 - 'git push --force https://$GH_TOKEN@github.com/taea/taea.github.io.git HEAD:master'
 env:
   global:
-  - GIT_COMMITTER_NAME=taea-via-TravisCI
+  - GIT_COMMITTER_NAME=taea
   - GIT_COMMITTER_EMAIL=igiari@gmail.com
-  - GIT_AUTHOR_NAME=taea-via-TravisCI
+  - GIT_AUTHOR_NAME=taea
   - GIT_AUTHOR_EMAIL=igiari@gmail.com
