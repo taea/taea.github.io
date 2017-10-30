@@ -3,25 +3,25 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: taea.github.io
 subtitle:
 description:
-author: John Doe
-language:
-timezone:
+author: taea
+language: ja
+timezone: Asia/Tokyo
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://taea.esa.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :posts/:number
 permalink_defaults:
 
 # Directory
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: archives
+archive_dir: posts
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
